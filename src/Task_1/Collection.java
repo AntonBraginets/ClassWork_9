@@ -1,5 +1,6 @@
 package Task_1;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 class Collection implements Interface {

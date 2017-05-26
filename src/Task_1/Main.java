@@ -37,6 +37,9 @@ public class Main {
         elements.toArray();
         System.out.println();
         System.out.println("8) Element with index 1: " + elements.getElementWithIndex(1));
-
+        System.out.print("9) Figure 20 was met for the first time with index of: ");
+        System.out.println(elements.newArrayList.indexOf(20));
+        System.out.print("10) Figure 10 was met for the last time with index of: ");
+        System.out.println(elements.newArrayList.lastIndexOf(10));
     }
 }

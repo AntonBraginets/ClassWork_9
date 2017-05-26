@@ -15,5 +15,7 @@ interface Interface {
 
     void toArray();
 
-    int getElementWithIndex(int index);
+    int getElementWithIndex(int figure);
+
+    //int findFigureFirst(int figure);
 }
