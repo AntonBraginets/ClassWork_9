@@ -3,7 +3,7 @@ package Task_1;
 interface Interface {
     void addElement();
 
-    void addElementIndex(int index, int number);
+    void addElementIndex(int index, int figure);
 
     void removeElementIndex(int index);
 
@@ -17,5 +17,5 @@ interface Interface {
 
     int getElementWithIndex(int figure);
 
-    //int findFigureFirst(int figure);
+    boolean equals(Object obj);
 }
