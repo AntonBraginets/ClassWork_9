@@ -8,9 +8,9 @@ class Collection implements Interface {
 
     @Override
     public void addElement() {
-        newArrayList.add(10);
-        newArrayList.add(20);
-        newArrayList.add(30);
+        newArrayList.add(0, 20);
+        newArrayList.add(1, 10);
+        newArrayList.add(2, 30);
     }
 
     @Override
@@ -49,5 +49,27 @@ class Collection implements Interface {
     @Override
     public int getElementWithIndex(int index) {
         return newArrayList.get(index);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Collection that = (Collection) o;
+
+        return newArrayList.equals(that.newArrayList);
+    }
+
+    @Override
+    public int hashCode() {
+        return newArrayList.hashCode();
+    }
+
+    @Override
+    public String toString() {
+        return "Collection{" +
+                "newArrayList=" + newArrayList +
+                '}';
     }
 }

@@ -18,4 +18,6 @@ interface Interface {
     int getElementWithIndex(int figure);
 
     boolean equals(Object obj);
+
+    String toString();
 }

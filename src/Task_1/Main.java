@@ -6,13 +6,16 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Collection col1 = new Collection();
+        Collection col2 = new Collection();
 
-        //добавление трех элементов 10, 20, 30
+        //добавление трех элементов 10, 20, 30 в коллекцию col1
         col1.addElement();
-        System.out.println("1) Creating collection:");
+        System.out.println("1) Creating collection (col1):");
         for (int a : col1.newArrayList) {
             System.out.print(a + "; ");
         }
+        //добавление трех элементов 10, 20, 30 в коллекцию col2
+        col2.addElement();
 
         //добавление элемента 55 по индексу 2
         col1.addElementIndex(2, 55);
@@ -41,7 +44,7 @@ public class Main {
         //создаем коллекцию заново
         col1.addElement();
         System.out.print("5) This collection consists of " +
-                col1.getLength() + " col1.");
+                col1.getLength() + " elements.");
         System.out.println();
         if (col1.checkContent())
             System.out.println("6) This collection contains item 40.");
@@ -58,16 +61,22 @@ public class Main {
                 col1.getElementWithIndex(1));
 
         //Первое вхождение числа 20
-        System.out.print("9) Figure 20 was met for the" +
+        System.out.print("9) Figure 20 was met for the " +
                 "first time with index of: ");
         System.out.println(col1.newArrayList.indexOf(20));
 
         //Последнее вхождение числа 10
-        System.out.print("10) Figure 10 was met for the" +
+        System.out.print("10) Figure 10 was met for the " +
                 "last time with index of: ");
         System.out.println(col1.newArrayList.lastIndexOf(10));
 
-        //Сравнение объектов класса
-        System.out.print("11) Equals method: ");
+        //Сравнение объектов Col1 и Col2
+        System.out.print("11) Equals method in action. Col1 equals to Col2: ");
+        System.out.println(col1.equals(col2));
+
+        //Использование метода toString
+        System.out.print("12) toString method in action: ");
+        System.out.println(col1.toString());
+        System.out.println(col2.toString());
     }
 }
